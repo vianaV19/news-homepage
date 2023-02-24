@@ -154,7 +154,7 @@ main .news-wrapper .news-aside {
     color: var(--Dark-grayish-blue);
 }
 
-.news .content .btn {
+main .news .content .btn {
     background-color: var(--Soft-red);
     padding: 12px 18px;
     text-align: center;
