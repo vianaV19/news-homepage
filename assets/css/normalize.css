@@ -1,10 +1,10 @@
-@import url(https://fonts.google.com/specimen/Inter);
 
-/* FONTS SETUPS
-@font-face {
-    font-family: Inter;
-    src: url(https://fonts.google.com/specimen/Inter);
-} */
+/* FONTS SETUPS */
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
+}
+
 
 :root {
     /* NEUTRAL */
@@ -16,10 +16,13 @@
     /* PRIMARY */
     --Soft-orange: hsl(35, 77%, 62%);
     --Soft-red: hsl(5, 85%, 63%)
+    font-family: 'Inter', Arial, sans-serif; 
 }
 
+
+
 * {
-    font-family: Inter;
+
     margin: 0;
     padding: 0;
 }
