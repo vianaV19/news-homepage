@@ -190,14 +190,15 @@ main .news-aside {
 main .news-aside h2 {
     font-size: 40px;
     color: var(--Soft-orange);
-}
-
-main .news-aside h2 {
     margin-bottom: 20px;
 }
 
 main .news-aside p {
-    font-weight: 400;
+    font-weight: 100;
+}
+
+main .news-aside .news-list h3 {
+    margin-bottom: 10px;
 }
 
 main .news-aside a {
