@@ -49,22 +49,6 @@ body {
     display: none;
 }
 
-.navbar-aside {
-    width: 60%;
-    position: absolute;
-    z-index: 1;
-    background-color: var(--Off-white);
-    height: 100%;
-    right: -60%;
-    top: 0;
-    transition: 300ms;
-    display: none;
-}
-
-.navbar-aside.show {
-    right: 0;
-}
-
 
 nav .nav {
     gap: 50px;
@@ -86,9 +70,19 @@ nav .nav a:hover {
 
 /* NEWS STYLE START  */
 
+
+
 main #navbar-aside {
     flex-direction: column;
     gap: 50px;
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--Off-white);
+    height: 100%;
+    right: -60%;
+    top: 0;
+    display: none;
 }
 
 main #navbar-aside .btn-wrapper {
@@ -225,13 +219,14 @@ main .news-aside .news-list {
 @media (max-width:527px) {
 
     body {
-        padding: 50px 0 !important;
-        overflow-x: hidden !important;
+        padding: 50px 0 ;
+        overflow-x: hidden;
     }
-
-    main .navbar-aside {
+    main #navbar-aside.show {
+        right: 0;
         display: block;
     }
+    
 
     .container {
         width: 375px;
