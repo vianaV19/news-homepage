@@ -165,6 +165,10 @@ main .news-wrapper .news-aside {
     color: var(--Dark-grayish-blue);
 }
 
+main .news .thumb .thumb-img {
+    width: 100%;
+}
+
 main .news .content .btn {
     background-color: var(--Soft-red);
     width: 50%;
