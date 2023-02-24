@@ -165,7 +165,7 @@ main .news-wrapper .news-aside {
     color: var(--Dark-grayish-blue);
 }
 
-main .news .thumb .thumb-img {
+main .news .thumb #thumb-img {
     width: 100%;
 }
 
