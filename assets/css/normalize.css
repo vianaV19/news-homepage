@@ -27,7 +27,7 @@ ul {
 }
 
 body {
-    padding: 80px;
+    margin: 80px;
 }
 
 a{
@@ -37,6 +37,15 @@ button{
     background-color: transparent;
     outline: none;
     border: none;
+}
+
+
+@media (max-width:527px) {
+
+    body {
+        margin: 20px 0;
+        overflow-x: hidden;
+    }
 }
 
 

@@ -226,7 +226,7 @@ main .news-aside .news-list {
 
     body {
         padding: 50px 0 !important;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     main .navbar-aside {
