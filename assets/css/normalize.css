@@ -1,8 +1,10 @@
-/* FONTS SETUPS */
+@import url(https://fonts.google.com/specimen/Inter);
+
+/* FONTS SETUPS
 @font-face {
     font-family: Inter;
     src: url(https://fonts.google.com/specimen/Inter);
-}
+} */
 
 :root {
     /* NEUTRAL */
