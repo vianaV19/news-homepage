@@ -21,7 +21,7 @@ body {
 }
 
 .spacer {
-    height: 0.5px;
+    height: 1.5px;
     width: auto;
     background-color: var(--Off-white);
 }
@@ -40,9 +40,13 @@ body {
 }
 
 .navbar .nav-button button span {
-
+    transition: 300ms;
     font-size: 34px;
     color: var(--Very-dark-blue);
+}
+
+.navbar .nav-button button span:hover {
+    color: var(--Soft-orange);
 }
 
 .navbar .nav-button {
@@ -93,6 +97,11 @@ main #navbar-aside .btn-wrapper {
 
 main #navbar-aside #close-btn span {
     font-size: 48px;
+    transition: 300ms;
+}
+
+main #navbar-aside #close-btn span:hover {
+    color: var(--Soft-orange);
 }
 
 main #navbar-aside ul {
@@ -148,7 +157,7 @@ main .news-wrapper .news-aside {
     flex-flow: column;
     flex-basis: 53%;
     justify-content: space-between;
- 
+
 }
 
 .news .content .description p {
@@ -171,7 +180,7 @@ main .news .content .btn {
 /* ASIDE NEWS STYLE START*/
 main .news-aside {
     background-color: var(--Very-dark-blue);
-    padding: 30px 20px;
+    padding: 20px 20px 80px 20px;
 }
 
 main .news-aside h2 {
@@ -179,7 +188,7 @@ main .news-aside h2 {
     color: var(--Soft-orange);
 }
 
-main .news-aside h3 {
+main .news-aside h2 {
     margin-bottom: 20px;
 }
 
@@ -196,6 +205,7 @@ main .news-aside .news-list {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    gap: 30px;
 }
 
 /* ASIDE NEWS STYLE FINAL*/
@@ -222,15 +232,20 @@ main .news-aside .news-list {
 
 @media (max-width:527px) {
 
+    :where(main .news-wrapper, main .news-wrapper .news, .bottom-news, .news .content) {
+        flex-direction: column;
+    }
+
     body {
-        padding: 50px 0 ;
+        padding: 50px 0;
         overflow-x: hidden;
     }
+
     main #navbar-aside.show {
         right: 0;
         display: block;
     }
-    
+
 
     .container {
         width: 375px;
@@ -256,13 +271,11 @@ main .news-aside .news-list {
         gap: 50px;
     }
 
-    :where(main .news-wrapper, main .news-wrapper .news, .bottom-news, .news .content) {
-        flex-direction: column;
-    }
-
     .navbar .nav-button {
         display: block;
     }
+
+
 
     main .news-wrapper .news .content {
         height: auto;
